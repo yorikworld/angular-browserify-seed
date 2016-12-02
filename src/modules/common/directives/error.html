@@ -1,0 +1,5 @@
+<div ng-if="error" class="alert alert-danger fixed-content" role="alert">
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+    <span class="sr-only">Error:</span>
+    <span ng-if="error.status">Error: Code: {{error.status}},</span> Error message: {{error.statusText}}
+</div>

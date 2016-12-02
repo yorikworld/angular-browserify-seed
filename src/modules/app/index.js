@@ -7,6 +7,7 @@ module.exports =
         'ngAria',
         'ngMaterial',
         'pascalprecht.translate',
+        'infinite-scroll',
 
         // html templates in $templateCache
         require('../../../tmp/templates').name,
@@ -15,7 +16,7 @@ module.exports =
         require('../common').name,
 
         // modules
-        require('./foo').name
+        require('./main').name
     ])
         .config(/*@ngInject*/ function ($translateProvider) {
             $translateProvider.preferredLanguage('en');
